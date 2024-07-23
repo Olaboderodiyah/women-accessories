@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/account.css">
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h1>QUEEN'S</h1>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Handbags...">
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"/></svg>
+        </div>
+        <div class="menuitems">
+            <ul>
+                <li><a href="./index.html">
+                <svg class="icon"  xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1" />
+                </svg>
+                </li>
+                <li><a href="./shop.html">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M22 7.82a1.25 1.25 0 0 0 0-.19l-2-5A1 1 0 0 0 19 2H5a1 1 0 0 0-.93.63l-2 5a1.25 1.25 0 0 0 0 .19A.58.58 0 0 0 2 8a4 4 0 0 0 2 3.4V21a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9.56A4 4 0 0 0 22 8a.58.58 0 0 0 0-.18M13 20h-2v-4h2Zm5 0h-3v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5H6v-8a4 4 0 0 0 3-1.38a4 4 0 0 0 6 0A4 4 0 0 0 18 12Zm0-10a2 2 0 0 1-2-2a1 1 0 0 0-2 0a2 2 0 0 1-4 0a1 1 0 0 0-2 0a2 2 0 0 1-4 .15L5.68 4h12.64L20 8.15A2 2 0 0 1 18 10" />
+                    </svg>
+                </a></li>
+                <li><a href="./cart.html">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                    </svg>
+                </a></li>
+                <li><a href="./about.html">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22" />
+                    </svg>
+                </a></li>
+                <li><a href="./account.html">
+                    <svg class="icon activen" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4" />
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <form action="submit" method="post" class="sign-up">
+        <div class="main">
+            <h2>Sign Up</h2>
+        <p>Already have an account?  <span class="login">Login</span></p>
+        <div class="input">
+            <p class="p">Full Name</p>
+            <div class="input">
+                <input class="inp" type="text" name="Name" placeholder="Full Name" required>
+            </div>
+        </div>
+        <div class="input">
+            <p class="p">Email Address</p>
+            <div class="input">
+                <input class="inp" type="email" name="email" placeholder="you@example.com" required>
+            </div>
+        </div>
+        <div class="input">
+            <p class="p">Password</p>
+            <div class="input">
+                <input class="inp" type="password" name="Password" placeholder="Enter 6 character or more" required>
+            </div>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="remember" id="" >
+            <p>Remember me</p>
+        </div>
+        <button class="sign-btn" type="submit">SIGN UP</button>
+        <div class="orlogin">
+            <p id="p">or sign up with</p>
+        </div>
+        <div class="website-login">
+            <button class="google">GOOGLE</button>
+            <button class="facebook">FACEBOOK</button>
+        </div>
+        </div>
+    </form>
+
+    <form action="submit" method="post" class="log-in hide">
+        <div class="main">
+            <h2>Log In</h2>
+        <p>Don't have an account?  <span class="signup">Sign up</span></a></p>
+        <div class="input">
+            <p class="p">Email Address</p>
+            <div class="input">
+                <input class="inp" type="email" name="email" placeholder="you@example.com" required>
+            </div>
+        </div>
+        <div class="input">
+            <p class="p">Password</p>
+            <div class="input">
+                <input class="inp" type="password" name="Password" placeholder="Enter 6 character or more" required>
+            </div>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="remember" id="" >
+            <p>Remember me</p>
+        </div>
+        <button class="sign-btn" type="submit">LOGIN</button>
+        <div class="orlogin">
+            <p id="p">or login with</p>
+        </div>
+        <div class="website-login">
+            <button class="google">GOOGLE</button>
+            <button class="facebook">FACEBOOK</button>
+        </div>
+        </div>
+    </form>
+
+    
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer1">
+            <div class="note1">
+                <h4>
+                    QUEEN'S- women accessories
+                </h4>
+                <p>Accessorize your elegance</p>
+            </div>
+            <div class="note2">
+                <h4>Link</h4>
+                <a href="./index.html">Home</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./cart.html">Cart</a>
+                <a href="./about.html">About Us</a>
+                <a href="./account.html">Account</a>
+            </div>
+            <div class="note3">
+                <h4>Support</h4>
+                <a href="./account.html">Login</a>
+                <a href="./">Suscribe</a>
+                <a href="./">Our Partners</a>
+            </div>
+            <div class="note4">
+                <h4>Contact</h4>
+                <p>Phone:     234 917 837 9872</p>
+                <p>Email:     aboloreolabode32@gmail.com</p>
+                <p>Address:   54, Main St.Dollars</p>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; QUEEN'S - women accessories</small>
+        </div>
+    </div>
+</footer>
+<script src="./sript.js"></script>
+</html>

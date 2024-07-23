@@ -1,0 +1,619 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --pink: #FADADD;
+    --white: #ffff;
+    --black: #000000;
+    --transition: all 400ms ease;
+    --box-shadow: 10px 13px 13px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+    top: 0;
+    width: 100%;
+    background: var(--pink);
+    display: flex;
+    place-items: center;
+    gap: 150px;
+    padding: 20px 40px;
+    position: fixed;
+    z-index: 1;
+    border-radius: 0 0 0px 20px;
+}
+
+
+h1 {
+    font-size: 32px;
+    color: var(--black);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.menuitems ul {
+    display: flex;
+    margin-left: 20%;
+}
+
+.icon {
+    color: var(--black);
+    margin-left: 30px;
+}
+
+.activen {
+    color: var(--black);
+    border-bottom: solid var(--black) 3px;
+}
+
+.searchbar {
+    height: 30px;
+    position: relative;
+    width: 25%;
+}
+
+.searchbar input {
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px 21px 11px;
+    border: none;
+    color: var(--black);
+}
+
+.search {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.hero-section {
+    height: 100vh;
+}
+
+.hero-section .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-section .image img {
+    width: 100%;
+}
+
+.tagline {
+    position: absolute;
+    top: 195px;
+    padding-left: 40px;
+}
+
+.tagline h2 {
+    font-size: 64px;
+    width: 500px;
+    color: var(--white);
+}
+
+.tagline h3 {
+    margin-top: 10px;
+    font-size: 50px;
+    color: var(--white);
+}
+
+.tagline button {
+    margin-top: 100px;
+    border: none;
+    width: 40%;
+    padding: 20px 10px;
+    background: var(--white);
+    color: var(--black);
+    font-size: 30px;
+    border-radius: 20px 0;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: all ease 0.2s;
+}
+
+.tagline button:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.category-section {
+    padding: 0 50px;
+}
+
+.sec-title {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.sec-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ctg {
+    margin-top: 30px;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 13px 13px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.ctg:hover img {
+    height: 105%;
+    width: 105%;
+}
+
+.ctg .img-text {
+    position: absolute;
+    background: var(--pink);
+    bottom: 0;
+    transform-origin: bottom;
+    transform: translateY(100%);
+    width: 100%;
+    height: 25%;
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    transition: var(--transition);
+}
+
+.ctg:hover .img-text {
+    transform: translateY(0);
+}
+
+.ctg img {
+    height: 100%;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.img-text p {
+    top: 50%;
+    color: var(--black);
+}
+
+.see-all {
+    background-color: #f0afb5;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+
+}
+
+.see-more {
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.see-more a {
+    color: var(--black);
+    font-size: 25px;
+}
+
+.see-more a:hover {
+    text-decoration: underline;
+}
+
+.testimonial-section {
+    padding: 50px 50px;
+    background: var(--white);
+}
+
+.sec-set2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.aboutus-section {
+    background: var(--pink);
+    height: auto;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.bg {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    right: 10px;
+    display: flex;
+    gap: 50px;
+}
+
+.bg p {
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.testimony {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.testimony .image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.testimony .image img {
+    width: 264px;
+    height: 399px;
+    position: absolute;
+    left: 0px;
+}
+
+.footer {
+    text-align: center;
+    height: 20%;
+    background: var(--pink);
+    padding: 30px 100px;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.note1 {
+    height: 200px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+.footer1 p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.note2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    margin-top: 10px;
+    color: var(--black);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.note3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.note3 a {
+    margin-top: 10px;
+    color: var(--black);
+}
+
+@media (max-width: 1024px) {
+    .tagline {
+        top: 300px;
+    }
+
+    .nav {
+        gap: 80px;
+    }
+
+    .sec-set {
+        justify-content: space-evenly;
+    }
+
+    .bg p {
+        font-size: 23px;
+    }
+}
+/* CSS for Menu Button and Responsive Navigation */
+.menu-btn {
+    display: none; /* Hide menu button by default */
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block; /* Show menu button on smaller screens */
+        cursor: pointer;
+        margin-left: 150px; /* Adjust margin as needed */
+    }
+
+    
+    .menuitems {
+        display: none; /* Hide menu items by default on smaller screens */
+        position: absolute;
+        top: 0; /* Adjust top position of dropdown */
+        left: 0;
+        width: 100%;
+        background: var(--pink);
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000; /* Ensure it's above other content */
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.4s, transform 0.4s;
+    }
+
+    .menuitems ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menuitems ul li {
+        margin-bottom: 10px;
+    }
+
+    .menuitems ul li a {
+        font-size: 18px;
+        color: var(--black);
+    }
+
+    .menuitems.active {
+        top: 70px;
+        display: block; /* Show menu items when menu button is clicked */
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .menuitems ul li {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideIn 0.4s forwards;
+        animation-delay: calc(0.1s * var(--i));
+    }
+
+    @keyframes slideIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .menuitems ul {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+
+    .sec-set {
+        justify-content: space-between;
+    }
+
+    .ctg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tagline {
+        top: 160px;
+    }
+
+    .tagline button {
+        margin-top: 20px;
+    }
+
+    .aboutus-section {
+        margin-top: 0;
+    }
+
+    .sec-title {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .bg {
+        gap: 20px;
+    }
+
+    .bg p {
+        font-size: 23px;
+    }
+
+    .footer {
+        padding: 10px 35px;
+    }
+}
+
+@media (max-width: 430px) {
+    .menuitems.active{
+        top: 40px;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .nav {
+        padding: 12.5px 25px;
+        justify-content: center;
+    }
+
+    .tagline {
+        padding-left: 25px;
+        margin-left: 0;
+        width: 100%;
+        top: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .tagline h2 {
+        font-size: 35px;
+        width: 274px;
+        line-height: 30px;
+    }
+
+    .tagline h3 {
+        font-size: 25px;
+    }
+
+    .footer {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer1 p {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    .note1 {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .note2 {
+        margin-bottom: 20px;
+    }
+
+    .note3 {
+        margin-bottom: 20px;
+    }
+
+    .note4 {
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .footer__copyright {
+        font-size: 10px;
+    }
+
+    .tagline button {
+        margin-top: 40px;
+        padding: 12.5px 6.25px;
+        font-size: 18.75px;
+        border-radius: 12.5px;
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .category-section {
+        padding: 0 31.25px;
+    }
+
+    .sec-title {
+        margin-top: 62.5px;
+        margin-bottom: 50px;
+    }
+
+    .ctg {
+        width: 218.8px;
+        height: 218.8px;
+    }
+
+    .ctg .img-text {
+        font-size: 25px;
+    }
+
+    .see-more {
+        margin-top: 18.75px;
+    }
+
+    .aboutus-section {
+        margin-top: 62.5px;
+        padding: 0 25px;
+    }
+
+    .sec-set {
+        justify-content: center;
+    }
+
+    .bg {
+        flex-direction: column;
+        align-items: center;
+        gap: 31.25px;
+    }
+
+    .bg p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .testimonial-section {
+        padding: 30px 30px;
+    }
+
+    .sec-set2 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .testimony {
+        gap: 12.5px;
+        align-items: center;
+    }
+
+    .note {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,221 @@
+/* Global Styles */
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --pink: #FADADD;
+    --white: #ffffff;
+    --black: #000000;
+    --transition: all 400ms ease;
+    --box-shadow: 10px 13px 13px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.nav {
+    /* position: fixed;
+    z-index: 0; */
+}
+
+.footer {
+    height: auto;
+}
+
+form {
+    margin-top: 100px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 50px 100px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+}
+
+.main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main span {
+    /* text-decoration: underline; */
+    color: blue;
+    cursor: pointer;
+}
+
+.main p {
+    color: rgb(155, 153, 153);
+}
+
+input {
+    border: solid var(--pink) 2px;
+    border-radius: 6px;
+    padding: 7px 20px;
+    font-size: 13px;
+}
+
+.input p {
+    color: black;
+}
+
+.inp {
+    width: 40%;
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+.sign-btn {
+    width: 40%;
+    background: var(--pink);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.p {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.orlogin {
+    width: 40%;
+    text-align: center;
+}
+
+.website-login {
+    width: 40%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.google {
+    padding: 15px 25px;
+    background: none;
+    border-radius: 6px;
+    border: solid red 1px;
+    color: red;
+}
+
+.facebook {
+    padding: 15px 25px;
+    background: none;
+    border-radius: 6px;
+    border: solid blue 1px;
+    color: blue;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form {
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .inp, .sign-btn, .orlogin, .website-login {
+        width: 100%;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    input, .sign-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .google, .facebook {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 20px 10px;
+    }
+
+    .main h2 {
+        font-size: 1.25rem;
+    }
+
+    input, .sign-btn {
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+
+    .google, .facebook {
+        padding: 8px 15px;
+        font-size: 0.875rem;
+    }
+}
+
+/* Additional Beauty */
+body {
+    background: linear-gradient(to bottom left, var(--pink), var(--white));
+    color: var(--black);
+}
+
+form {
+    /* background: var(--white); */
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+input, .sign-btn {
+    transition: var(--transition);
+}
+
+input:focus {
+    border-color: var(--black);
+    outline: none;
+}
+
+.sign-btn:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.google:hover {
+    background: red;
+    color: var(--white);
+}
+
+.facebook:hover {
+    background: blue;
+    color: var(--white);
+}
